@@ -4,9 +4,6 @@ int ledPin = 13; //pin that tells relay to turn light on/off
 #define BUTTON_PIN1 12 //8 hour timer
 #define BUTTON_PIN2 8 //12 hour timer
 #define BUTTON_PIN3 7 //16 hour timer
-#define BUTTON_PIN4 11 //High light
-#define BUTTON_PIN5 10 //Medium light
-#define BUTTON_PIN6 9 //Low light
 int clockReset1; //acts as a timer reset check
 int clockReset2; //acts as a timer reset check
 int clockReset3; //acts as a timer reset check
@@ -24,9 +21,6 @@ void setup()
   pinMode(BUTTON_PIN1, INPUT_PULLUP); //button input
   pinMode(BUTTON_PIN2, INPUT_PULLUP); //button input
   pinMode(BUTTON_PIN3, INPUT_PULLUP); //button input
-  pinMode(BUTTON_PIN4, INPUT_PULLUP); //button input
-  pinMode(BUTTON_PIN5, INPUT_PULLUP); //button input
-  pinMode(BUTTON_PIN6, INPUT_PULLUP); //button input
   rtc.begin(); //initialize rtc variable
   //rtc.setTime(14, 10, 20); // Uncomment to set the time to hour, min, sec (24hr format)
 }
